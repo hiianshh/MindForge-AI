@@ -1,0 +1,17 @@
+{
+  "name": "mindforge-ai",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,magenta \"npm:dev --workspace server\" \"npm:dev --workspace client\"",
+    "build": "npm run build --workspace client",
+    "start": "npm run start --workspace server"
+  },
+  "overrides": {
+    "braces": "^3.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

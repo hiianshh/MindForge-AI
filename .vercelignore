@@ -1,0 +1,11 @@
+.env
+.env.*
+**/.env
+**/.env.*
+server/.env
+.vercel
+node_modules
+**/node_modules
+client/dist
+.git
+.DS_Store

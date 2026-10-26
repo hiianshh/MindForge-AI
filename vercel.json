@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "client/dist",
+  "functions": {
+    "api/[...path].js": { "maxDuration": 60 },
+    "api/ai/generate.js": { "maxDuration": 60 },
+    "api/ai/evaluate.js": { "maxDuration": 60 },
+    "api/ai/expand.js": { "maxDuration": 60 },
+    "api/ai/transcribe.js": { "maxDuration": 60 }
+  }
+}
